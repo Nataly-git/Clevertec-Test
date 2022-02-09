@@ -1,0 +1,20 @@
+                  CASH RECEIPT
+                 Supermarket 123
+            12, MILKYWAY Galaxy/ Earth
+                Tel: 123-456-7890
+
+CASHIER: #4                   DATE: 09/02/2022
+                               TIME: 20:47:25
+------------------------------------------------
+QTY DESCRIPTION                PRICE      TOTAL
+  1 bacon                      $7,50      $7,50       
+ 10 milk                       $1,50      $15,00      
+discount =                                $-1,50
+  1 cheese                     $4,00      $4,00       
+ 49 yogurt                     $1,20      $58,80      
+discount =                                $-5,88
+  5 eggs                       $2,00      $10,00      
+================================================
+TOTAL BEFORE DISCOUNT                     $87,92
+CART DISCOUNT                             $8,79
+TOTAL                                     $79,13

@@ -67,12 +67,12 @@ public class CheckRunner {
         System.out.printf("%s %10s %20s %10s\n", "QTY", "DESCRIPTION", "PRICE", "TOTAL");
         for(Map.Entry<Item, Integer> itemInBasket : basket.itemsBasket.entrySet()) {
             Item item = itemInBasket.getKey();
-            int qty = itemInBasket.getValue();
+            int quantity = itemInBasket.getValue();
             double price = item.getPrice();
             double itemTotal = itemInBasket.getValue() * price;
             totalBasketCost+= itemTotal;
-            System.out.printf("%3d %-26s $%-9.2f $%-10.2f \n", qty, item.getItemName(), price, itemTotal);
-            if(qty > 5) makeQtyDiscount(itemTotal);
+            System.out.printf("%3d %-26s $%-9.2f $%-10.2f \n", quantity, item.getItemName(), price, itemTotal);
+            if(quantity > 5) makeQuantityDiscount(itemTotal);
         }
         for (int i = 0; i < 48; i++) {
             System.out.print("=");
@@ -80,7 +80,7 @@ public class CheckRunner {
         System.out.println();
     }
 
-    private static void makeQtyDiscount(Double itemTotal) {
+    private static void makeQuantityDiscount(Double itemTotal) {
         double discount = itemTotal * 10 / 100;
         totalBasketCost-=discount;
         System.out.printf("%-41s $-%.2f\n", "discount = ", discount);
